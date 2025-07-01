@@ -1,0 +1,75 @@
+# Core Data Science Libraries
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Machine Learning Libraries
+scikit-learn>=1.3.0
+xgboost>=1.7.0
+lightgbm>=4.0.0
+
+# Deep Learning Frameworks
+torch>=2.0.0
+torchvision>=0.15.0
+tensorflow>=2.13.0
+tf-keras>=2.15.0  # Backward compatibility for sentence-transformers with Keras 3
+
+# Graph Neural Networks and Graph Analysis
+torch-geometric>=2.3.0
+networkx>=3.1
+dgl>=1.1.0
+# stellargraph>=1.2.1  # Re-enable when Python 3.12 support is added
+
+# Vector Operations and Similarity Search
+faiss-cpu>=1.7.4
+annoy>=1.17.0
+hnswlib>=0.7.0
+sentence-transformers>=2.2.0
+pinecone-client>=2.2.0
+
+# Database Integrations
+supabase>=1.0.0
+psycopg2-binary>=2.9.0
+sqlalchemy>=2.0.0
+asyncpg>=0.28.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+bokeh>=3.2.0
+networkx[default]>=3.1
+
+# Jupyter and Interactive Development
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+ipywidgets>=8.0.0
+notebook>=7.0.0
+
+# Data Processing and Utilities
+tqdm>=4.65.0
+joblib>=1.3.0
+# pickle5>=0.0.12  # Not needed for Python 3.12+ (built-in features)
+h5py>=3.9.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pyyaml>=6.0
+
+# Text Processing (for text-based graphs/vectors)
+transformers>=4.30.0
+tokenizers>=0.13.0
+spacy>=3.6.0
+
+# Graph Visualization
+pyvis>=0.3.2
+graphviz>=0.20.0
+
+# Development Tools
+black>=23.0.0
+flake8>=6.0.0
+pytest>=7.4.0
+mypy>=1.4.0
+
+# Optional: GPU support (uncomment if you have CUDA)
+# torch-geometric>=2.3.0+cu118
+# faiss-gpu>=1.7.4 

@@ -9,7 +9,7 @@ pinecone:
   dimension: 1536 # Adjust based on your embeddings
   metric: "cosine" # cosine, euclidean, or dotproduct
   cloud: "aws" # aws, gcp, or azure
-  region: "us-east-1" # Choose appropriate region
+  region: "us-east-1"
 
 # Supabase Configuration
 supabase:
