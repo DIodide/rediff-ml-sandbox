@@ -1,0 +1,45 @@
+# Database Configuration Template
+# Copy this file and customize for your setup
+
+# Pinecone Vector Database Configuration
+pinecone:
+  api_key: "${PINECONE_API_KEY}" # Set in environment variables
+  environment: "${PINECONE_ENVIRONMENT}" # Optional, for older accounts
+  index_name: "ml-sandbox-index"
+  dimension: 1536 # Adjust based on your embeddings
+  metric: "cosine" # cosine, euclidean, or dotproduct
+  cloud: "aws" # aws, gcp, or azure
+  region: "us-east-1" # Choose appropriate region
+
+# Supabase Configuration
+supabase:
+  url: "${SUPABASE_URL}" # Your Supabase project URL
+  key: "${SUPABASE_KEY}" # Anon key or service role key
+  db_url: "${SUPABASE_DB_URL}" # Direct PostgreSQL connection (optional)
+  schema: "public"
+
+# Alternative PostgreSQL Configuration
+postgres:
+  host: "localhost"
+  port: 5432
+  database: "ml_sandbox"
+  username: "${DB_USERNAME}"
+  password: "${DB_PASSWORD}"
+
+# Connection pooling settings
+connection_pool:
+  max_connections: 20
+  min_connections: 5
+  connection_timeout: 30
+
+# Batch processing settings
+batch_settings:
+  default_batch_size: 1000
+  max_batch_size: 10000
+  concurrent_batches: 3
+
+# Logging configuration
+logging:
+  level: "INFO" # DEBUG, INFO, WARNING, ERROR
+  log_to_file: true
+  log_file: "logs/database.log"
