@@ -15,7 +15,7 @@ try:
     from pinecone import Pinecone, ServerlessSpec
 except ImportError:
     raise ImportError(
-        "Pinecone client not installed. Install with: pip install pinecone-client"
+        "Pinecone client not installed. Install with: pip install pinecone"
     )
 
 logger = logging.getLogger(__name__)
