@@ -25,7 +25,7 @@ faiss-cpu>=1.7.4
 annoy>=1.17.0
 hnswlib>=0.7.0
 sentence-transformers>=2.2.0
-pinecone-client>=2.2.0
+pinecone>=3.0.0
 
 # Database Integrations
 supabase>=1.0.0
